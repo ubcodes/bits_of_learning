@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gruppo&display=swap');
+
+
+
+body {
+    /* font-family: 'Amatic SC',cursive; */
+    font-family: 'Gruppo', sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+
+    background-color: #fff;
+    color: #000;
+    margin: 48px 240px 48px 48px;
+    max-width: 1140px;
+    transition: color 1s;
+}
+
+body.dark {
+    color: #fff;
+}
+
+div.statement {
+    font-size: 80px;
+    line-height: 1.1;
+}
+
+div.statement h1 span {
+    display: inline-block;
+    background-color: #000;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    margin: 0  32px 0 0 ;
+    transition: background-color 1s;
+
+}
+
+body.dark div.statement h1 span {
+    background-color: 1s;
+}
+
+div.statement p{
+    margin: 64px 0 0 0 ;
+    text-indent: 80px;
+} 
+
+div.color-changer {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    border: 2px solid #000 ;
+    padding: 8px 16px 8px 16px;
+    /* padding-top: 16px ; */
+    border-radius: 50px;
+    text-align: center;
+    /* transition: border 1s; */
+}
+
+/* div.color-changer:hover {
+    border: 2px solid #fff ;
+} */
+
+
+div.color-changer input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}

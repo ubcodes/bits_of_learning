@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Untitled Sans';
+    src: url('TestUntitledSans-Regular.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gruppo&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    /* font-family: 'Untitled Sans';    */
+    /* font-family: 'Belleza'; */
+    font-family: 'Gruppo';
+    font-size: 24px;
+    line-height: 1.3;
+
+    background: #a9b2db;
+    background-color: #bec5e4;
+    transition:  background-color 1s ;
+}
+
+body.dark { 
+    color: #fff;
+}
+
+header  {
+    position: fixed;
+    top: 32px;
+    left: 48px;
+    right: 48px;
+    /* padding: 32px 32px 32px 48px; */
+    padding: 20px 32px 20px 48px;
+    border-radius: 100px;
+
+    background-color: #ffffff88;
+    backdrop-filter: blur(16px); /*bluring agent*/
+    box-shadow: 0 4px 12px #00000011;
+
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+header a.button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 16px 24px;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+section.hero {
+    /* background-image: url("https: //images.pexels.com/photos/4465121/pexels-photo-4465121.jpeg?auto=compress&cs=tinysrgb&w=400"); */
+    background-image: url("./images/fit.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #a9b2db;
+
+    aspect-ratio: 3/2;
+    width: 100%;
+    max-height: 100vh;
+}
+
+section.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 48px;
+}
+
+section {
+     padding: 48px;
+}
+
+h2 {
+    font-size: 112px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 32px;
+}
+
+p{
+    margin: 0 0 24px;
+}
+
+img { 
+     max-width: 100%;
+
+}
+
+p.interval {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 3em;
+    font-style: italic;
+}
+
+/* Color - Changer  */
+
+div.color-changer {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    border: 2px solid #000 ;
+    padding: 8px 16px 8px 16px;
+    border-radius: 50px;
+    text-align: center;
+    transition: border 1s;
+}
+
+body.dark div.color-changer {
+    border: 2px solid #fff;
+}
+
+
+div.color-changer input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
